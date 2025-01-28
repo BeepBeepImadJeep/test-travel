@@ -18,7 +18,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/BeepBeepImadJeep/"
+		"url": "git+https://github.com/BeepBeepImadJeep/test-travel"
 	},
 	"keywords": [
 		"gulp",
@@ -31,9 +31,9 @@
 	"author": "Andrey",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/BeepBeepImadJeep/"
+		"url": "https://github.com/BeepBeepImadJeep/test-travel/issues"
 	},
-	"homepage": "https://beepbeepimadjeep.github.io/",
+	"homepage": "https://beepbeepimadjeep.github.io/test-travel",
 	"devDependencies": {
 		"@archoleat/stylelint-config-extended-scss": "^1.6.9",
 		"autoprefixer": "^10.4.14",
