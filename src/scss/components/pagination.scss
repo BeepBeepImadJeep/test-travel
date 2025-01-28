@@ -1,0 +1,24 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+//Pagination
+.pagination {
+  
+  &-bullets {
+    display: flex;
+    gap: rem(12);
+    margin-top: 40px;
+  }
+
+  &-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+
+    &-active {
+      background-color: var(--color-blue);
+    }
+  }
+}

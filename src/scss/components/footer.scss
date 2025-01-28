@@ -1,0 +1,52 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+// Footer
+.footer {
+  inline-size: 100%;
+  background-color: var(--color-blue);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(24);
+		min-height: $footer-height;
+		padding-top: rem(35);
+		padding-bottom: rem(35);
+
+		@include media-mx(768) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__social {
+		display: flex;
+		gap: 0 rem(16);
+
+		&-item {
+			transition: .3s ease-in-out;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+
+	&__payment {
+		display: flex;
+		gap: 0 rem(8);
+
+		&-item {
+			max-height: 30px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}

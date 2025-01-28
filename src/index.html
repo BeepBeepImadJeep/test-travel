@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html')
+      <main class="page">
+
+        <div class="audit">
+          <div class="audit__container">
+            <div class="audit__content">
+              <div class="audit__text-wrapper">
+                <h1 class="audit__title">Get a hotel website audit <span>for&nbsp;free</span></h1>
+                <p class="audit__description">If your hotel website does not bring any bookings, maybe, it is lacking something: content, structure, or SEO optimization. Sign up for a website audit, to find out the reasons why travelers do not find the website or do not book on it.</p>
+              </div>
+              <a class="audit__button" href="#">Leave a request</a>
+            </div>
+            <div class="audit__images ibg">
+              <img class="audit__image" src="./images/audit/audit-image.png" alt="Audit">
+            </div>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="check__container">
+            <div class="check__content">
+              <h2 class="check__title">Things we <span>check</span></h2>
+              <p class="check__description">In&nbsp;14&nbsp;years in&nbsp;business, our auditors have studied over 2&nbsp;500 hotel websites to&nbsp;reveal what affects website conversion into bookings.</p>
+            </div>
+            <div class="check__slider js-check-slider">
+              <div class="swiper-wrapper">
+                <div class="check__image ibg">
+                  <img src="./images/check/check-image.png" alt="Check bg">
+                </div>
+                <div class="item item--1">
+                  <div class="item__image ibg">
+                    <img src="./images/check/check-item-1.png" alt="Ranking in search engines">
+                  </div>
+                  <h3 class="item__title">Ranking in search engines</h3>
+                  <p class="item__subtitle">Your website&rsquo;s ranking directly affects the number of&nbsp;website visitors. That is&nbsp;why we&nbsp;look for reasons that prevent the website from getting to&nbsp;the top of&nbsp;search results.</p>
+                </div>
+                <div class="item item--2">
+                  <div class="item__image ibg">
+                    <img src="./images/check/check-item-2.png" alt="Website navigation">
+                  </div>
+                  <h3 class="item__title">Website navigation</h3>
+                  <p class="item__subtitle">We&nbsp;check if&nbsp;the navigation menu of&nbsp;the website is&nbsp;clear and easy for searching. It&nbsp;should contain all the necessary menu sections that shall be&nbsp;laid out in&nbsp;the way most familiar for users.</p>
+                </div>
+                <div class="item item--3">
+                  <div class="item__image ibg">
+                    <img src="./images/check/check-item-3.png" alt="Content">
+                  </div>
+                  <h3 class="item__title">Content</h3>
+                  <p class="item__subtitle">The website should have all the information that travelers might be&nbsp;looking for when they search for accommodation. We&nbsp;check if&nbsp;your hotel website has it&nbsp;all, and it&nbsp;is&nbsp;easy to&nbsp;perceive.</p>
+                </div>
+                <div class="item item--4">
+                  <div class="item__image ibg">
+                    <img src="./images/check/check-item-4.png" alt="Marketing and converting features">
+                  </div>
+                  <h3 class="item__title">Marketing and converting features</h3>
+                  <p class="item__subtitle">The converting hotel website encourages users to&nbsp;book. This means that it&nbsp;has pricing information, Call-to-Action buttons, and purchase motivators all in&nbsp;the right places.</p>
+                </div>
+              </div>
+              <div class="pagination-bullets"></div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      @@include('html/footer.html')
+    </div>
+  </body>
+</html>
