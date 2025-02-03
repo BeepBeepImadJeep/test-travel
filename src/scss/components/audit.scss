@@ -68,7 +68,7 @@
   &__images {
     @include adaptive-clamp(min-width, 760, 560, 1500, 1099, 1);
     @include adaptive-clamp(max-width, 760, 560, 1500, 1099, 1);
-    @include adaptive-clamp(height, 450, 350, 1500, 1190, 1);
+    @include adaptive-clamp(height, 452, 350, 1500, 1190, 1);
 
     @include media-mx(1099) {
       min-width: 100%;

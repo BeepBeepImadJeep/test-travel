@@ -11,13 +11,14 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: rem(24);
-		min-height: $footer-height;
+		min-height: 111px;
 		padding-top: rem(35);
 		padding-bottom: rem(35);
 
 		@include media-mx(768) {
 			flex-direction: column;
 			align-items: flex-start;
+			min-height: 218px;
 		}
 	}
 

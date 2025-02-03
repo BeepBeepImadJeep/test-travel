@@ -47,3 +47,11 @@
 	flex: 1 1 auto;
 	background-color: var(--bg-color);
 }
+
+.body-scroll-fix {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}

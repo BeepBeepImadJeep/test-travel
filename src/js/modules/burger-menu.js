@@ -4,6 +4,12 @@ export class BurgerMenu {
   static headerMenu = document.querySelector('.js-header-mobile-menu');
   static isOpen = false;
 
+  static get body() {
+    return BurgerMenu._body || (BurgerMenu._body = document.body);
+  }
+
+  static _body = null;
+
   static init() {
     if (this.burgerButton && this.headerMenu) {
       this.burgerButton.addEventListener('click', () => {
@@ -26,29 +32,16 @@ export class BurgerMenu {
   }
 
   static bodyFixPosition() {
-    setTimeout( () => {
-      if ( !document.body.hasAttribute('data-body-scroll-fix') ) {
-        let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        document.body.setAttribute('data-body-scroll-fix', scrollPosition);
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.top = '-' + scrollPosition + 'px';
-        document.body.style.left = '0';
-        document.body.style.width = '100%';
+    setTimeout(() => {
+      if (!this.body.classList.contains('body-scroll-fix')) {
+          this.body.classList.add('body-scroll-fix');
       }
-    }, 15 );
+    }, 15);
   }
 
   static bodyUnfixPosition() {
-    if ( document.body.hasAttribute('data-body-scroll-fix') ) {
-      let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
-      document.body.removeAttribute('data-body-scroll-fix');
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.left = '';
-      document.body.style.width = '';
-      window.scroll(0, scrollPosition);
+    if (this.body.classList.contains('body-scroll-fix')) {
+        this.body.classList.remove('body-scroll-fix');
     }
   }
 }
